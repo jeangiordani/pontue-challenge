@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BookController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -32,3 +33,9 @@ Route::get('/users', [UserController::class, 'getAllUsers'])->name('get.users')-
 Route::get('/users/{id}', [UserController::class, 'getUser'])->name('get.user')->middleware('jwt.auth');
 Route::put('/users/{id}', [UserController::class, 'updateUser'])->name('update.user')->middleware('jwt.auth');
 Route::delete('/users/{id}', [UserController::class, 'destroyUser'])->name('delete.user')->middleware('jwt.auth');
+
+Route::post('/books', [BookController::class, 'createBook'])->name('create.book')->middleware('jwt.auth');
+Route::get('/books', [BookController::class, 'getBooks'])->name('get.books')->middleware('jwt.auth');
+Route::get('/books/{id}', [BookController::class, 'getBook'])->name('get.book')->middleware('jwt.auth');
+Route::put('/books/{id}', [BookController::class, 'updateBook'])->name('update.book')->middleware('jwt.auth');
+Route::delete('/books/{id}', [BookController::class, 'deleteBook'])->name('delete.book')->middleware('jwt.auth');

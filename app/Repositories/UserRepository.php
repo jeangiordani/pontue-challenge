@@ -45,7 +45,7 @@ class UserRepository
         if ($users != null) {
             return ResponseHelper::responseSuccess($users, 200);
         }
-        return ResponseHelper::responseNotFound('Users not found', 404);
+        return ResponseHelper::responseNotFound('Table users is empty', 200);
     }
 
     public function getUser(int $id): JsonResponse
