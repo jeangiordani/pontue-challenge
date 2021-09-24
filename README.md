@@ -1,13 +1,13 @@
 # Pontue-challenge
 
-## Comandos pra projeto funcionar
-
 ### Tecnologia usadas
 
 -   Laravel
 -   MySQL
 -   JWT
 -   Docker
+
+## Comandos pra projeto funcionar
 
 ### Copiar .env.example para .env
 
