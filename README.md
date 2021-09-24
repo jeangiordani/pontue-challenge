@@ -2,6 +2,13 @@
 
 ## Comandos pra projeto funcionar
 
+### Tecnologia usadas
+
+-   Laravel
+-   MySQL
+-   JWT
+-   Docker
+
 ### Copiar .env.example para .env
 
 ```sh
@@ -41,3 +48,9 @@ $ docker-compose exec app php artisan db:seed
 ```sh
 $ docker-compose exec app php artisan jwt:secret
 ```
+
+## Depois de configurar o projeto
+
+### Basta baixar o arquivo json com os endpoint e importar para o postman.
+
+-   [Endpoints com Postman](https://www.postman.com/collections/964b4e8022403c1ed8f1)
